@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    tools:context=".GPSActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/jobnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/activity_gps_jobnumber_text"
+            android:textSize="1sp"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/activity_gps_uid_text"
+            android:textSize="1sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/jobnumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toEndOf="@+id/jobnumber" />
+
+        <TextView
+            android:id="@+id/Clickbelowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_gps_Clickbelowtext_text"
+            android:textColor="#588000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobnumber"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#558000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clickbelowtext"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/job_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Job Date"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <TextView
+            android:id="@+id/tvJobDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_gps_tvJobDescription_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_date" />
+
+        <TextView
+            android:id="@+id/jobpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_gps_jobpin_text"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJobDescription" />
+
+        <TextView
+            android:id="@+id/companyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/companyId"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobpin"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_gps_starttime_text"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyId"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/stoptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_gps_stoptime_text"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starttime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/jobhours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/activity_gps_jobhours_hint"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stoptime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/priceQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/price_quote"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobhours"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/quantity"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceQuote"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/adress"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantity"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/tvStartCordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/activity_gps_tvStartCordinates_hint"
+        android:textColor="#558000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartCoordinates"
+        app:layout_constraintStart_toStartOf="@+id/btnStartCoordinates"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/tvStopCordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/activity_gps_tvStopCordinates_hint"
+        android:textColor="#558000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStartCordinates"
+        app:layout_constraintEnd_toEndOf="@+id/btnStopCoordinates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvStartCordinates"
+        app:layout_constraintStart_toStartOf="@+id/btnStopCoordinates"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/btnStartCoordinates"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:background="#558000"
+        android:text="@string/activity_gps_btnStartCoordinates_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnStopCoordinates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartCordinates" />
+
+    <Button
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/btnStopCoordinates"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:background="#558000"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_gps_btnStopCoordinates_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStartCoordinates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnStartCoordinates" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

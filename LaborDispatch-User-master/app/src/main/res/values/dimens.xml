@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="icon_size">@dimen/_40sdp</dimen>
+
+
+    <dimen name="icon_text">@dimen/_9ssp</dimen>
+
+    <dimen name="item_corner_radius">@dimen/_6sdp</dimen>
+
+    <dimen name="margin_top_screen">@dimen/_3sdp</dimen>
+    <dimen name="margin_top_screen5">@dimen/_5sdp</dimen>
+    <dimen name="margin_top_screen7">@dimen/_7sdp</dimen>
+    <dimen name="margin_top_screen9">@dimen/_9sdp</dimen>
+    <dimen name="margin_top_screen12">@dimen/_12sdp</dimen>
+    <dimen name="margin_top_screen10">@dimen/_10sdp</dimen>
+
+</resources>

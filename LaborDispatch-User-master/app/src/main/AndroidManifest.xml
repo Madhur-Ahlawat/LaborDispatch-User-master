@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.UsreLaborDispatch1.www.UsreLaborDispatch1">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <application
+        android:name="com.AdminLaborDispatch1.www.sync.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DownloadsActivity"></activity>
+        <activity android:name=".DownloadedImageActivity"></activity>
+        <activity android:name=".DocumentsMenuActivity"></activity>
+        <activity
+            android:name=".SetupActivity"
+            android:label="@string/setup" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".GPSActivity" />
+        <activity android:name=".ExportActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartajobActivity" />
+        <activity android:name=".StopjobActivity" />
+        <activity android:name=".ReportjobActivity" />
+        <activity android:name=".Editjob1Activity" />
+        <activity android:name=".EditjobActivity" />
+        <activity android:name=".Editjob2Activity" />
+        <activity android:name=".pdf.PdfViewer" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZ-qbAa10_dUE4JBtHdc9Weat_jyLg4gY" />
+
+        <activity android:name=".AdressSelectionAcitivty"/>
+
+        <service
+            android:name="com.UsreLaborDispatch1.www.sync.services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.UsreLaborDispatch1.www.sync.services.CallReceiver" />
+    </application>
+
+</manifest>

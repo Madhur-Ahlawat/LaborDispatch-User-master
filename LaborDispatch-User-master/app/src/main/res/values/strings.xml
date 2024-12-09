@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DispatchLabor: USER</string>
+    <string name="updating_location">Updating Location...</string>
+
+
+    <string name="add_tool_mobile_asset">Add A Job Number</string>
+    <string name="check_out_tool_mobile_asset">Start A Job</string>
+    <string name="check_in_tool_mobile_asset">Stop A Job</string>
+    <string name="reports">Reports</string>
+    <string name="edit">Edit</string>
+    <string name="export">Export</string>
+    <string name="gps_lcator">GPS</string>
+
+    <string name="setup">Setup</string>
+    <string name="userpin">User Pin</string>
+    <string name="connection_error">Unable to Connect to Internet</string>
+    <string name="pdf_file">Pdf File</string>
+    <string name="downloads">Downloads</string>
+    <string name="image_file">Image File</string>
+    <string name="images_documents"><![CDATA[Images & Documents]]></string>
+    <string name="documents">Documents</string>
+    <string name="images">Images</string>
+    <string name="companyId">Company Id</string>
+
+
+    <string name="price_quote">Price Quote</string>
+    <string name="quantity">Quantity</string>
+    <string name="adress">Address</string>
+    <string name="streetNO">Street #</string>
+    <string name="streetName">Street Name</string>
+    <string name="city">City</string>
+    <string name="state">Province/State</string>
+    <string name="zipCode">Zip/Postal Code</string>
+    <string name="tellePhone">Tel #</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+</resources>

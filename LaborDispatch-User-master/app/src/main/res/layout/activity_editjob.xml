@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    tools:context=".EditjobActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/jobnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/activity_editjob_jobnumber_text"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="1sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/activity_editjob_uid_text"
+            android:textSize="1sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/jobnumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toEndOf="@+id/jobnumber" />
+
+        <TextView
+            android:id="@+id/Clickbelowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/activity_editjob_Clickbelowtext_text"
+            android:textColor="#588000"
+            android:textSize="14sp"
+
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobnumber"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#558000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clickbelowtext"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/jobdesc"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:ems="35"
+            android:fontFamily="sans-serif"
+            android:hint="@string/activity_editjob_jobdesc_hint"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/jobpin"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/activity_editjob_jobpin_hint"
+            android:inputType="textPersonName"
+            android:text="@string/activity_editjob_jobpin_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobdesc" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/companyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/companyId"
+            android:inputType="textPersonName"
+            android:text="@string/companyId"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobpin" />
+
+        <EditText
+            android:id="@+id/jobhours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/activity_editjob_jobhours_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/activity_editjob_jobhours_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyId"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/jobrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/activity_editjob_jobrate_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/activity_editjob_jobrate_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobhours"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:enabled="true"
+            android:id="@+id/priceQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/price_quote"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobrate"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:enabled="true"
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/quantity"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceQuote"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#C2E085"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_editjob_savebutton_text"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffa500"
+        android:fontFamily="sans-serif"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_editjob_clearbutton_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/deletebutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savebutton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#CCCC00"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_editjob_deletebutton_text"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/clearbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/clearbutton"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

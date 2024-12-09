@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    tools:context=".ReportjobActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Clickbelowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_Clickbelowtext_text"
+            android:textColor="#588000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobnumber"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:textColor="#558000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clickbelowtext"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/job_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="Job Date"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <TextView
+            android:id="@+id/jobdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_jobdesc_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_date" />
+
+        <TextView
+            android:id="@+id/jobpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_jobpin_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobdesc" />
+
+        <TextView
+            android:id="@+id/companyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/companyId"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobpin" />
+
+        <TextView
+            android:id="@+id/jobflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_jobflag_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyId"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/jobhours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:hint="@string/activity_reportjob_jobhours_hint"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobflag"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/ll_jobrate"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobhours">
+
+            <TextView
+                android:id="@+id/jobrate"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/margin_top_screen5"
+                android:hint="@string/activity_reportjob_jobrate_hint"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/jobcost"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/margin_top_screen5"
+                android:hint="@string/activity_reportjob_jobcost_hint"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_quantity"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_jobrate">
+
+            <TextView
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:id="@+id/priceQuote"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_screen5"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_screen5"
+                android:text="@string/activity_reportjob_quantity_text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_starttime_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_quantity"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/stoptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_reportjob_stoptime_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starttime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvPdfFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/pdf_file"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stoptime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:layout_marginBottom="@dimen/margin_top_screen5"
+            android:text="@string/adress"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPdfFileName"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/viewallbutton"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_top_screen12"
+        android:background="#CCCC00"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_reportjob_viewallbutton_text"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/viewonebutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/viewonebutton"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_top_screen12"
+        android:background="#588000"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_reportjob_viewonebutton_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/viewallbutton"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/jobnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_screen"
+        android:text="@string/activity_reportjob_jobnumber_text"
+        android:textSize="1sp"
+        android:textColor="#FFFFFF"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewonebutton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

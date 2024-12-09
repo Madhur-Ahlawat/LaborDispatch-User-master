@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "173200389334",
+    "firebase_url": "https://dispatchvan-36dfa-default-rtdb.firebaseio.com",
+    "project_id": "dispatchvan-36dfa",
+    "storage_bucket": "dispatchvan-36dfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173200389334:android:efae0ca70bd7449e4c8577",
+        "android_client_info": {
+          "package_name": "com.AdminLaborDispatch1.www.AdminLaborDispatch1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173200389334-8n7g2c3kfhc96u6m7cmjnj5j71am17it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQnJqNrB4lbZa2HL29hTslFPxvhv4l57s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173200389334-8n7g2c3kfhc96u6m7cmjnj5j71am17it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173200389334:android:994c87e5ff22a26e4c8577",
+        "android_client_info": {
+          "package_name": "com.UsreLaborDispatch1.www.UsreLaborDispatch1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173200389334-8n7g2c3kfhc96u6m7cmjnj5j71am17it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQnJqNrB4lbZa2HL29hTslFPxvhv4l57s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173200389334-8n7g2c3kfhc96u6m7cmjnj5j71am17it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

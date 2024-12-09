@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    tools:context=".ExportActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/jobnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="1sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Clickbelowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_screen5"
+            android:text="@string/activity_export_Clickbelowtext_text"
+            android:textColor="#588000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toBottomOf="@+id/jobnumber"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#558000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clickbelowtext"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/job_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Job Date"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <TextView
+            android:id="@+id/tvJobDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_export_tvJobDescription_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_date" />
+
+        <TextView
+            android:id="@+id/jobpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_export_jobpin_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJobDescription" />
+
+        <TextView
+            android:id="@+id/companyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/companyId"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobpin" />
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_reportjob_starttime_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyId"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/stoptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/activity_reportjob_stoptime_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starttime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvJobHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/activity_export_tvJobHour_hint"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stoptime"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvJobRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/activity_export_tvJobRate_hint"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJobHour"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/activity_export_tvStartDate_hint"
+        android:textColor="#ffa500"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvEndDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/tvEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/activity_export_tvEndDate_hint"
+        android:textColor="#ffa500"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStartDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvStartDate"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/btnStartDate"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffa500"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_export_btnStartDate_text"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnEndDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndDate"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/btnEndDate"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffa500"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_export_btnEndDate_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndDate" />
+
+    <Button
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/btnExportAll"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:background="#CCCC00"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_export_btnExportAll_text"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnExportJob"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartDate"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/btnExportJob"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:background="#CCCC00"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/activity_export_btnExportJob_text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnExportAll"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartDate" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:background="#558000"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_export_btnEmail_text"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExportAll"
+        tools:fontFamily="sans-serif"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
